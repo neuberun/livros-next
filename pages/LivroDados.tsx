@@ -53,7 +53,6 @@ const LivroDados: React.FC = () => {
             }
         } catch (error) {
             console.log(error);
-            // Tratar o erro conforme necessário
         }
     };
 

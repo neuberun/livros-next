@@ -33,14 +33,12 @@ const LivroLista: React.FC = () => {
     };
 
     const excluir = async (codigo: number) => {
-        // Remove o livro da lista
         setLivros((livrosAntigos) =>
-          livrosAntigos.filter((livro) => livro.codigo !== codigo)
+            livrosAntigos.filter((livro) => livro.codigo !== codigo)
         );
-      
-        // Exclui o livro
+
         await excluirLivro(codigo);
-      };
+    };
 
     return (
         <div >

@@ -31,10 +31,9 @@ export const LinhaLivro: React.FC<LinhaLivroProps> = ({
         getNomeEditora(livro.codEditora);
     }, [livro.codEditora]);
 
-    // Função para excluir o livro
     const handleExcluirLivro = async (codLivro: number) => {
         await controleLivros.excluir(codLivro);
-        excluir(codLivro); // Atualiza a lista após a exclusão
+        excluir(codLivro);
     };
 
     return (
